@@ -18,7 +18,7 @@ def data_organise(data: DataFrame = None,split_ratio: float = 0): # type: ignore
     # 1st col to 13 (0-12) in features (rest)
     # 14 col in prediction (MEDV)
     x = array(data.iloc[:, : -1])
-    y = array(data.iloc[:,   -1])
+    y = array(data.iloc[:,   -1]).reshape((-1,1))
     return  x, y
 
 
