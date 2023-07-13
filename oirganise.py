@@ -12,7 +12,7 @@ def split_data(df: DataFrame, split_ratio = 0.2):
 
 def data_organise(data: DataFrame = None,split_ratio: float = 0): # type: ignore
     if not data:
-        data = read_csv("./real_estate.csv")
+        data = read_csv("./res/real_estate.csv")
     if split_ratio > 0 and split_ratio < 1:
         split_data(data, split_ratio)
     # 1st col to 13 (0-12) in features (rest)
