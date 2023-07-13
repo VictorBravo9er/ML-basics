@@ -20,12 +20,6 @@ def data_organise(data: DataFrame = None,split_ratio: float = 0): # type: ignore
     x = array(data.iloc[:, : -1])
     y = array(data.iloc[:,   -1])
     return  x, y
-def data_organise():
-    data = read_csv("res/real_estate.csv")
-    
-    # 1st col to 13 (0-12) in features (rest)
-    # 14 col in prediction (MEDV)
 
-    
 
     
